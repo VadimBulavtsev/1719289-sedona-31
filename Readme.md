@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вадим Булавцев](https://up.htmlacademy.ru/htmlcss/31/user/1719289).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
