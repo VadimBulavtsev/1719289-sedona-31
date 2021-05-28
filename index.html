@@ -2,33 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title>Sedona</title>
+    <link rel="icon" href="img/favicon.ico">
   </head>
   <body>
 
-    <header>
+    <header class="main-header">
       <nav>
         <ul>
           <li><a href="#">Информация</a>
           </li>>
           <li><a href="#">Фото и видео</a>
           </li>>
-          <li><a>
-            <img src="img/index-log.svg" width="138" height="70" alt="Логотип сайта 'Седона'">
-          </a>>
+          <li>
+            <img src="img/logo.jpg" width="138" height="70" alt="Логотип сайта 'Седона'">
           </li>
           <li><a href="#">Карта штата</a>
           </li>>
-          <li><a href="catalog.html">Гостиницы</a>
+          <li><a href="hotel.html">Гостиницы</a>
           </li>>
         </ul>>
       </nav>>
-      <a href="#">
-        <img src="img/background.jpg" width="1200" height="509" alt="">
-      </a>
-    </header>>
+    </header>
     <main>
-
+        <img src="img/background photo.jpg" width="1200" height="509" alt="Фоновое изображение">
+      </a>
       <h1>Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <section>
@@ -42,12 +40,13 @@
             течёт своя жизнь</p>
           </li>
         </ul>>
-        <a href="#">
-          <img src="img/photo1.jpg" width="800" height="256" alt=""> 
+        
+          <img src="img/image.jpg" width="800" height="256" alt="Картинка дома"> 
         </a>
           <section>
           <ul>
             <li>
+              <a></a>
               <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
@@ -62,8 +61,8 @@
           </ul>
           </section>
 
-          <a href="#">
-            <img src="img/photo2.jpg" width="800" height="256" alt=""> 
+          
+            <img src="img/photo2.jpg" width="800" height="256" alt="Изображение каньона"> 
           </a>
           <h2>Там есть Мост дьявола</h2>
           <ul>
@@ -111,18 +110,61 @@
         <section>
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a href="form.html">Поиск гостиницы в Седоне</a>
+          <button type="button">Поиск гостиницы в Седоне</button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="appointment-start-date">Дата заезда:</label>
+              <input id="appointment-start-date" type="text" name="date" placeholder="24 АПРЕЛЯ 2017"> 
+            </p>
+            <p>
+              <label for="appointment-final-date">Дата выезда:</label>
+              <input id="appointment-final-date" type="text" name="date" placeholder="4 ИЮЛЯ 2017">
+            </p>
+            <p>
+              <label for="appointment-adults">Взрослые:</label>
+              <input id="appointment-adults" type="number" name="adults" placeholder="2">
+            </p>
+            <p>
+              <label for="appointment-children">Дети:</label>
+              <input id="appointment-children" type="number" name="children" placeholder="0">
+            </p>
+            <button type="submit">НАЙТИ</button>
+          </form>
         </section>>
-        <h2>Карта</h2>
-        <a>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52385.22535292058!2d-111.83032950515648!3d34.854302948683014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1621867206558!5m2!1sru!2sru" width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy" alt="maps"></iframe>
-        </a>
-
-
-
+        <p>
+          Разработано:
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+  
     </main>>
 
-    
+    <footer>
+      <section>
+        <h2>Карта</h2>
+        <a href="#">
+          <img src="img/map.jpg" width="1199" height="594"alt="Карта"></iframe>
+        </a>
+      </section>
+      <section>
+        <h2>Как нас найти</h2>
+        <p>#visitSEDONA <br>
+          +7 800 555-86-28</p>
+      </section>
+      <section>
+        <h2>Наши соцсети</h2>
+        <ul>
+          <li>
+            <a href="#">Твиттер</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Ютьюб</a>
+          </li>>
+        </ul>
+      </section>
+    </footer>
 
   </body>
 </html>
