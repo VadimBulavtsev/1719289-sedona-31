@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
   </head>
-  <body>
+  <body class="page-body-hotel">
     <header class="main-header">
-      <nav>
-        <a href ="index.html" class="logo">
-          <img src="img/logo.jpg" width="138" height="70" alt="Логотип сайта 'Седона'">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href ="index.html">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта 'Седона'">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a>
           </li>
           <li><a href="#">Фото и видео</a>
@@ -23,40 +26,40 @@
         </ul>
       </nav>
     </header>
-      <main class="main-content">
+      <main class="container">
         <div class="user-filters">
           <h1 class="lodging">Поиск жилья в Седоне</h1>
           <form name="filters" action="https://echo.htmlacademy.ru" method="get">
             <div class="global-search">
               <p class="infrastructure">Инфрастуктура:</p>
               <ul class="infrastructure-search">
-                <li>
-                  <input type="checkbox" name="swim" id="pool" checked="checked">
+                <li class="checkbox-list">
+                  <input class="checkbox-item" type="checkbox" name="swim" id="pool" checked="checked">
                   <label for="pool">Бассейн</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="parking" id="parking">
+                <li class="checkbox-list">
+                  <input class="checkbox-item" type="checkbox" name="parking" id="parking">
                   <label for="parking">Парковка</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="internet" id="internet">
+                <li class="checkbox-list">
+                  <input class="checkbox-item" type="checkbox" name="internet" id="internet">
                   <label for="internet">wi-fi</label>
                 </li>
               </ul>
             </div>
             <div class="house-type">
-              <b class="filters-title">Тип жилья:</b>
+              <p class="filters-title">Тип жилья:</p>
               <ul class="list-filters">
-                <li>
-                  <input id="hotel" type="checkbox" name="hotel" checked="checked">
+                <li class="checkbox-list">
+                  <input class="checkbox-item" id="hotel" type="checkbox" name="hotel" checked="checked">
                   <label for="hotel">Гостиница</label>
                 </li>
-                <li>
-                  <input id="motel" type="checkbox" name="motel" checked="checked">
+                <li class="checkbox-list">
+                  <input class="checkbox-item" id="motel" type="checkbox" name="motel" checked="checked">
                   <label for="motel">Мотель</label>
                 </li>
-                <li>
-                  <input id="apartments" type="checkbox" name="apartments" checked="checked">
+                <li class="checkbox-list">
+                  <input class="checkbox-item" id="apartments" type="checkbox" name="apartments" checked="checked">
                   <label for="apartments">Апартаменты</label>
                 </li>
               </ul>
@@ -104,13 +107,22 @@
             </h3>
             <div class="more-info">
               <div class="house-info">Гостиница</div>
-              <a class="detail" href="#">Подробнее</a>
+              <div class="to-book">
+                <button class="button to-book" type="button" href="#">Подробнее</a>
+              </div>
             </div>
             <div class="house-price">
               <div class="house-info">От 4000 р.</div>
-              <a class="to-book" href="#">Забронировать</a>
+              <div class="details">
+                <button class="button details" type="button" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="rating">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
               <span>Рейтинг: 8,5</span>
             </div>
           </div>
@@ -123,13 +135,22 @@
             </h3>
             <div class="more-info">
               <div class="house-info">Мотель</div>
-              <a class="detail" href="#">Подробнее</a>
+              <div class="to-book">
+                <button class="button to-book" type="button" href="#">Подробнее</a>
+              </div>
             </div>
             <div class="house-price">
               <div class="house-info">От 3000 р.</div>
-              <a class="to-book" href="#">Забронировать</a>
+              <div class="details">
+                <button class="button details" type="button" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="rating">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
               <span>Рейтинг: 8,9</span>
             </div>
           </div>
@@ -142,24 +163,33 @@
             </h3>
             <div class="info">
               <div class="house-info">Апартаменты</div>
-              <a class="detail" href="#">Подробнее</a>
+              <div class="to-book">
+                <button class="button to-book" type="button" href="#">Подробнее</a>
+              </div>
             </div>
             <div class="house-price">
               <div class="house-info">От 2000 р.</div>
-              <a class="to-book" href="#">Забронировать</a>
+              <div class="details">
+                <button class="button details" type="button" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="rating">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
               <span>Рейтинг: 9,2</span>
             </div>
           </div>
         </div>
     </main>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-social">
         <h2>Как нас найти</h2>
         <p>
           <span>#visitSEDONA</span> <br>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
       </section>
       <div class="social">
@@ -167,17 +197,17 @@
         <div class="social-list">
           <div class="social-item">
             <div class="social-link">
-            <a href="#" target="_blank">Твиттер</a>
+            <a class="button-social" href="#" target="_blank">Твиттер</a>
             </div>
           </div>
           <div class="social-item">
             <div class="social-link">
-            <a href="#" target="_blank">Фейсбук</a>
+            <a class="button-social" href="#" target="_blank">Фейсбук</a>
             </div>
           </div>
           <div class="social-item">
             <div class="social-link">
-            <a href="#" target="_blank">Ютьюб</a>
+            <a class="button-social" href="#" target="_blank">Ютьюб</a>
             </div>
           </div>
         </div>
